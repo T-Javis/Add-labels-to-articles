@@ -59,6 +59,7 @@ label_dic=[]
 
 '''
 #mysql
+con = MySQLdb.connect(host="*.*.*.*", user="***", passwd="***",db="news_data",port=****,charset='utf8')
 cur = con.cursor()
 cur.execute('select * from grab_news')
 mysql_db=cur.fetchall()
